@@ -1048,6 +1048,11 @@ hr {
 		z-index: 4;
 	}
 
+	.people-menu svg {
+		position: relative;
+		left: 1.2em;
+	}
+
 	#modal .logo {
 		width: 100%;
 		text-align: center;
@@ -1645,4 +1650,29 @@ border-radius: 8px
 	.quick-links .small-only {
 		display: none;
 	}
+}
+
+/* Target footer */
+/* Generals */
+.grid,
+.grid-large,
+.grid-large-temp {
+	display: grid;
+}
+
+.flex,
+.flex-small,
+.flex-large {
+	display: flex
+}
+
+.small-only {
+	display: none;
+}
+
+
+
+svg {
+	width: 30px;
+	height: 30px;
 }
