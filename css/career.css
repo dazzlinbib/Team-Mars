@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 @font-face{
     font-family: SourceSerifPro;
     src: url(../fonts/SourceSerifPro.otf);
@@ -7,19 +13,126 @@
     src: url("../fonts/ProximaNova.otf");
 }
 
-.test {
-    border: 2px solid red;
+html,
+body {
+    background: #fafafa;
+    font-family: 'ProximaNova';
+    font-size: 1rem;
+    overflow-x: hidden;
+    width: 100vw;
 }
 
-.test2 {
-    border: 2px solid blue;
+.flex-row {
+    display: flex;
+    justify-content: space-evenly;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    
+/*       Blue background         */
+
+.blue-bg {
+    background: #229ec5;
+    position: relative;
+    padding: 0 5%;
+    color: #fff;
 }
+
+.logo {
+    margin: 40px 0;
+}
+
+.headline {
+    width: 55%;
+    font-style: italic;
+    font-size: 160%;
+    margin: 70px 0 15px;
+    line-height: 150%;
+}
+
+.ceo-name {
+    font-size: 85%;
+    margin-bottom: 40px;
+}
+
+.bunny {
+    position: absolute;
+    right: -15%;
+    top: 3%;
+    z-index: 0;
+}
+
+.bunny img {
+    width: 250px;
+    height: 350px;
+}
+
+/*                  Details Main           */
+
+.head {
+    font-size: 100%;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 50px 0 10px;
+}
+
+.text {
+    width: 75%;
+    font-size: 95%;
+    line-height: 170%;
+}
+
+.text-small {
+    margin: 15px 0;
+    width: 80%;
+    font-size: 110%;
+}
+
+.text-small:after {
+    height: 1px;
+    display: block;
+    content: "";
+    background: #fff;
+    /* width: 95%; */
+    margin: 30px 0 30px;
+}
+
+.about a {
+    color: #fff;
+}
+
+/*          White background          */
+
+.white-bg {
+    background: #fafafa;
+    position: relative;
+    padding: 0 4%;
+    /* overflow-y: scroll; */
+    width: 3200px;
+    padding-left: 7%;
+}
+
+.close-icon {
+    position: absolute;
+    right: 9%;
+    top: 1%;
+}
+
+.title {
+    margin-top: 50px;
+
+}
+
+.head {
+    font-size: 90%;
+    font-weight: 400;
+}
+
+.sub-flex {
+    display: flex;
+}
+
+
+
+/*
 body{
     display: flex;
     position: relative;
@@ -27,11 +140,11 @@ body{
     width: 1440px;
     height: 2742px;
     background-color: #FFFFFF;
-    /*overflow-y: hidden;*/
+    overflow-y: hidden;
    
 }
 .details{
-    background-color: #229EC5;
+    background-color: ;
     
    width: 748px;
    color: #FFFFFF;
@@ -162,8 +275,8 @@ a{
     position:absolute;
     left:51.94%;
     right:0%;
-    top:0%;
-    bottom:-14.74%; /*negative value was used*/
+    top:0%; 
+    bottom:-14.74%; negative value was used
 
     background:#FFFFFF;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
@@ -246,4 +359,4 @@ a{
     top: 163px;
     left: 148px;
 
-}
+} */
