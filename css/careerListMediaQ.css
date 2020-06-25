@@ -139,7 +139,7 @@
 		display: flex;
 		justify-content: space-between;
 		order: 9999;
-		padding-right: 64px;
+		
 	}
 	.nav-icon {
 		display: block;
@@ -151,11 +151,8 @@
 		display: none;
 	}
 	.con-ul {
-		background: rgba(0, 0, 0, 0.5);
 		margin: 0;
 		padding: 0;
-		width: 100vw;
-		height: 100vh;
 	}
 	.flex-ul {
 		position: absolute;
@@ -165,7 +162,7 @@
 
 		width: 55%;
 		height: 70vh;
-		background: #000;
+		background: rgba(0, 0, 0, 0.795);
 		transform: translateX(-100%);
 		transition: 500ms;
 		z-index: 1;
