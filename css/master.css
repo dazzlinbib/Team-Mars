@@ -128,7 +128,7 @@ nav a {
 
 main .wrapper {
 	padding-top: 2em;
-	background-image: url(../images/wave.png);
+	background-image: url(https://res.cloudinary.com/dw4rdnuqh/image/upload/v1593029069/Team-Mars/wave_dgftyx.png);
 	background-size: cover;
 	background-position: center;
 }
@@ -183,7 +183,7 @@ main .wrapper {
 	justify-content: space-around;
 	align-items: center;
 	width: 98%;
-	padding: 0 4em 0 2em;
+	padding: 2em 4em 0 2em;
 	margin: 2em auto;
 }
 
@@ -201,7 +201,7 @@ main .wrapper {
 	margin-right: 3em;
 	color: #878787;
 	font-family: proximaNova, sans-serif;
-	font-size: 12px;
+	font-size: 16px;
 	line-height: 17px;
 }
 .nav-fixed li:last-child {
@@ -319,35 +319,52 @@ main .wrapper {
 	height: 100vh;
 	background: rgba(0, 0, 0, 0.5);
 	position: fixed;
-	top: 0;
-	left: -100vw;
+	top: -110vh;
+	left: 0;
 	z-index: 4;
 	transition: 0.5s ease;
 }
-#modal svg {
-	fill: #FA6866;
+#modal .close svg {
+	fill: #878787;
+	width: 20px;
+	height: 20px;
+	float: left;
+	position: relative;
+	top: -1.5em;
+	left: -1em;
+}
+
+#modal .help svg {
+	fill: #878787;
 	width: 20px;
 	height: 20px;
 	float: right;
 	position: relative;
-	top: -2em;
-	right: -2em;
+	top: -1.5em;
+	
 }
 
 #modal .wrapper {
-	width: 55%;
-	background: #000;
+	width: 100%;
+	background: #fff;
 	color: #fff;
 	padding: 3em;
+	height: 100vh;
 }
 #modal nav {
 	margin-top: 2em;
+}
+
+#modal nav ul {
+	flex-direction: column;
+	justify-content: center;
 }
 #modal li {
 	display: block;
 	list-style: none;
 	font-size: 1em;
 	margin: 1.5em 0;
+	text-align: center;
 }
 
 /* From Life at Hopper Section */
@@ -509,7 +526,7 @@ video {
 }
 
 .humans-quote {
-	background-image: url(../images/faces.png);
+	background-image: url(https://res.cloudinary.com/dw4rdnuqh/image/upload/v1593029015/Team-Mars/faces_f7xzqj.png);
 	margin: 6em auto;
 	background-size: cover;
 	background-position: center;
@@ -705,6 +722,7 @@ max-width: 250px
 
 footer {
 	padding: 1em;
+	position: relative;
 }
 
 footer > .wrapper {
@@ -719,14 +737,21 @@ footer > .wrapper {
 	justify-content: space-between;
 }
 
-footer img {
-	width: 50%;
+.footer-left img,
+footer > div > img {
+	width: 40%;
 	text-align: center;
+	position: relative;
+	bottom: 1.5em;
+}
+
+footer > div > img {
+	width: 25%;
 }
 
 .footer-left div:nth-child(2) {
 	position: relative;
-	bottom: 2.5em;
+	bottom: 1.8em;
 	width: 50%;
 	justify-content: space-between;
 }
@@ -794,6 +819,27 @@ footer .fas {
 	color: #878787;
 }
 
+.line {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	opacity: 0.3;
+	padding-right: 2em;
+}
+hr {
+	position: absolute;
+	top: 4.5em;
+	width: 88vw;
+	text-align: center;
+}
+
+.menu-head div:first-child {	
+	align-items: flex-start;
+}
+
+.menu-head div:first-child > img {
+	margin: 0.2em;
+}
 
 /* Media Queries */
 /* Minor */
@@ -922,6 +968,10 @@ footer .fas {
     width: 100%;
 }
 
+.top-header {
+	padding-top: 1em;
+}
+
 	#header_section .wrapper {
 		display: block;
 		position: relative;
@@ -990,11 +1040,22 @@ footer .fas {
 
 	.nav-fixed svg {
 		width: 23px;
-		height: 23px;
+		height: 23px;	
 	}
 
 	.nav-fixed .logo {
 		margin: 0 4em;
+		z-index: 4;
+	}
+
+	.people-menu svg {
+		position: relative;
+		left: 1.2em;
+	}
+
+	#modal .logo {
+		width: 100%;
+		text-align: center;
 	}
 
 	.horizontal-line {
@@ -1276,7 +1337,7 @@ footer .fas {
 	}
 
 	#humans .quote {
-		background-image: url(../images/faces.png);
+		background-image: url(https://res.cloudinary.com/dw4rdnuqh/image/upload/v1593029015/Team-Mars/faces_f7xzqj.png);
 		background-size: cover;
 		background-position: center;
 		position: relative;
@@ -1408,9 +1469,13 @@ footer .fas {
 		flex-direction: column-reverse;
 	}
 
-	.footer-right div {
+	.footer-right > div {
 		flex-direction: column;
 		align-items: flex-start;
+		width: 100%;
+	}
+
+	.footer-right > div > div {
 		width: 100%;
 	}
 
@@ -1421,12 +1486,36 @@ footer .fas {
 		margin-top: 1em;
 	}
 
+	.footer-menu {
+		position: relative;
+	}
+
+	.menu-head {
+		justify-content: space-between;
+		width: 100%;
+		
+		position: relative;
+	}
+
+	.open-close {
+		display: block;
+		
+	}
+
+	#footer .footer-right ul {
+		position: absolute;
+		top: 7em;
+	}
+
 	.footer-right ul > li {
 		/*display: none;*/
-		position: relative;
+		
+		
 		
 		background: #aaa;
 		width: 100vw;
+		border-bottom: 1px solid #999;
+		padding: 0.5em;
 	}
 
 	.footer-left {
@@ -1444,8 +1533,15 @@ footer .fas {
 	}
 
 	footer .fas {
-		display: block;
+		display: inline;
+		float: right;
+		position: absolute;
 	}
+
+	/* footer .fa-window-close {
+		
+		display: none;
+	} */
 
 	#footer .select {
 		width: 100%;
@@ -1464,9 +1560,9 @@ border-radius: 8px
 		width: 100%;
 	}
 
-	.footer-left {
+	/* .footer-left {
 	
-	}
+	} */
 	footer > div:first-child {
 		display: flex;
 		justify-content: center;
@@ -1527,11 +1623,16 @@ border-radius: 8px
 	}
 
 	.hide {
-	display: none;
+	/*display: none;*/
+	opacity: 0;
+	transition: 0.5s ease;
 }
 
 .show {
-	display: block;
+	/*display: block;*/
+	opacity: 1;
+	transition: 1s ease;
+	z-index: 2;
 }
 	/*#careers::after {
 		content: "";
@@ -1549,4 +1650,29 @@ border-radius: 8px
 	.quick-links .small-only {
 		display: none;
 	}
+}
+
+/* Target footer */
+/* Generals */
+.grid,
+.grid-large,
+.grid-large-temp {
+	display: grid;
+}
+
+.flex,
+.flex-small,
+.flex-large {
+	display: flex
+}
+
+.small-only {
+	display: none;
+}
+
+
+
+svg {
+	width: 30px;
+	height: 30px;
 }
