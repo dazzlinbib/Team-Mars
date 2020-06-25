@@ -8,7 +8,7 @@
 	src: url(../fonts/SourceSerifPro.otf);
 }
 
-/*********       Base styles          ********/
+/*********     Base styles          ********/
 html {
 	box-sizing: border-box;
 }
@@ -36,7 +36,7 @@ li {
 	cursor: pointer;
 }
 
-/********               Header section        *********/
+/********       Header section        *********/
 #header-section {
 	background: url(../images/careerListIMG/header.png);
 	background-repeat: no-repeat;
@@ -144,7 +144,7 @@ h1.header-text {
 	padding-top: 50px;
 }
 
-/*******              filters section         **********/
+/*******        filters section         **********/
 #filters-con {
 	background: #fff;
 	box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.05);
@@ -206,9 +206,10 @@ input.filters-search {
 	outline: none;
 	border-radius: 8px;
 	border: 0.5px solid #878787;
+	padding-left: 16px;
 }
 
-/**********             Table section         ********/
+/**********   Table section       ********/
 #desktop-table {
 	padding: 8rem 0;
 	background: #fafafa;
@@ -258,7 +259,7 @@ td i.fa-arrow-right {
 	visibility: hidden;
 }
 
-/*******               Perks Section          *******/
+/*******      Perks Section          *******/
 
 /* desktop section */
 .desktop-view {
