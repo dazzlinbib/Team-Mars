@@ -4,29 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hopper</title>
-    <!-- <link
+    <link
       href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
-      rel="stylesheet"/> -->
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
     <link rel="stylesheet" href="./css/homepage.css" />
   </head>
   <body>
+
+  <!-- PRELOADER -->
+<div class="overlay">
+  <div class="preloader">
+    <div class="circle">
+      LOADING
+      <span></span>
+    </div>
+  </div>
+</div>
     <!-- The Landing Page of The Homepage -->
     <div class="landingpage">
       <div class="landingpage-background">
         <div class="container">
           <div class="landingpage-top">
             <div class="hamburgermenu">
-              <img src="./icons/menu.svg" alt="menu button" />
+              <img class="fa-bars" src="./icons/menu1.svg" alt="menu button" />
             </div>
             <div class="logo">
-              <a href="index.html"
+              <a href="./index.html"
                 ><img src="./icons/logo.svg" alt="hopper logo"
               /></a>
             </div>
             <div class="nav-btns">
               <ul class="nav">
-                <li><a href="#" class="nav-link">COMPANY</a></li>
+                <li><a href="./company.html" class="nav-link">COMPANY</a></li>
 
                 <li><a href="./people.html" class="nav-link">PEOPLE</a></li>
                 <li>|</li>
@@ -36,16 +47,51 @@
                   /></a>
                 </li>
               </ul>
-              <a href="./cta-modal.html" class="sendapp-btn">Send app to your phone</a>
+              <a href="./cta-modal.html" class="sendapp-btn"
+                >Send app to your phone</a
+              >
             </div>
 
             <div class="support">
               <img src="./icons/help.svg" alt="help button" />
             </div>
           </div>
+          <div class="sub-nav hide">
+            <div class="hamburgermenu">
+              <img class="fa-bars" src="./icons/menu.svg" alt="menu button" />
+            </div>
+            <div class="logo">
+              <a href="./index.html">
+                <img src="images/logo.png" alt="logo"/>
+              </a>
+            </div>
+            <div class="nav-btns">
+              <ul class="nav">
+                <li><a href="#" class="nav-link">The App</a></li>
+                <li><a href="#" class="nav-link">Features</a></li>
+                <li><a href="#" class="nav-link">The Team</a></li>
+                <li><a href="#" class="nav-link">Deals</a></li>
+
+                <li class="divide">|</li>
+                <li>
+                  <a href="#" class="support"
+                    >SUPPORT <img src="./icons/support.svg" alt=""
+                  /></a>
+                </li>
+              </ul>
+              <a href="./cta-modal.html" class="sendapp-btn"
+                >Send app to your phone <img src="https://res.cloudinary.com/dw4rdnuqh/image/upload/v1593029036/Team-Mars/ic-send_y3y43f.png" alt=""
+              /></a>
+            </div>
+
+            <a href="#" class="support">
+              <img src="./icons/help1.svg" alt="help button" />
+            </a>
+          </div>
+
           <div class="landingpage-content">
             <img
-              src="./images/landingpage/apple-ios.png"
+              src="https://res.cloudinary.com/dw4rdnuqh/image/upload/v1593029036/Team-Mars/apple-ios_fhm6je.png"
               alt=""
               class="appleicon"
             />
@@ -74,16 +120,22 @@
             deals.
           </p>
         </div>
-        <div class="sectionii-images">
-          <div class="sectionii-firstimage">
-            <div class="sectionii-firstimagec image mobile"></div>
-            <div class="sectionii-firstimagea image"></div>
-            <div class="sectionii-firstimageb image"></div>
+
+        <div class="sectionii-bottom-images">
+          <div class="sectionii-bottom-first image">
+            <img src="https://res.cloudinary.com/dw4rdnuqh/image/upload/v1593029049/Team-Mars/2-left_ulnl3e.png" alt="" />
           </div>
-          <div class="sectionii-secondimage"></div>
-          <div class="sectionii-thirdimage">
-            <div class="sectionii-thirdimagea image"></div>
-            <div class="sectionii-thirdimageb image"></div>
+          <div class="sectionii-bottom-second image">
+            <img src="https://res.cloudinary.com/dw4rdnuqh/image/upload/v1593029048/Team-Mars/1-left_hcxb4n.png" alt="" />
+          </div>
+          <div class="sectionii-bottom-center image">
+            <img src="https://res.cloudinary.com/dw4rdnuqh/image/upload/v1593029050/Team-Mars/0-center_plzudh.png" alt="" />
+          </div>
+          <div class="sectionii-bottom-fourth image">
+            <img src="https://res.cloudinary.com/dw4rdnuqh/image/upload/v1593029049/Team-Mars/1-right_ymrnvq.png" alt="" />
+          </div>
+          <div class="sectionii-bottom-fifth image">
+            <img src="https://res.cloudinary.com/dw4rdnuqh/image/upload/v1593029049/Team-Mars/2-right_nkjheb.png" alt="" />
           </div>
         </div>
       </div>
@@ -103,27 +155,27 @@
         </div>
         <div class="sectioniii-images">
           <div class="sectioniii-image">
-            <img src="./images/sectioniii/i.png" alt="A badge" />
+            <img src="https://res.cloudinary.com/dw4rdnuqh/image/upload/v1593029051/Team-Mars/i_qn08r5.png" alt="A badge" />
             <p class="image">Lorem Ipsum</p>
           </div>
           <div class="sectioniii-image">
-            <img src="./images/sectioniii/ii.png" alt="A badge" />
+            <img src="https://res.cloudinary.com/dw4rdnuqh/image/upload/v1593029051/Team-Mars/ii_nal1bc.png" alt="A badge" />
             <p class="image">Lorem Ipsum</p>
           </div>
           <div class="sectioniii-image">
-            <img src="./images/sectioniii/iii.png" alt="A badge" />
+            <img src="https://res.cloudinary.com/dw4rdnuqh/image/upload/v1593029052/Team-Mars/iii_ggjbj4.png" alt="A badge" />
             <p class="image">Lorem Ipsum</p>
           </div>
           <div class="sectioniii-image">
-            <img src="./images/sectioniii/iv.png" alt="A badge" />
+            <img src="https://res.cloudinary.com/dw4rdnuqh/image/upload/v1593029052/Team-Mars/iv_iqbd60.png" alt="A badge" />
             <p class="image">Lorem Ipsum</p>
           </div>
           <div class="sectioniii-image">
-            <img src="./images/sectioniii/v.png" alt="A badge" />
+            <img src="https://res.cloudinary.com/dw4rdnuqh/image/upload/v1593029052/Team-Mars/v_bmyzhj.png" alt="A badge" />
             <p class="image">Lorem Ipsum</p>
           </div>
           <div class="sectioniii-image">
-            <img src="./images/sectioniii/vi.png" alt="A badge" />
+            <img src="https://res.cloudinary.com/dw4rdnuqh/image/upload/v1593029052/Team-Mars/vi_kf3jrq.png" alt="A badge" />
             <p class="image">Lorem Ipsum</p>
           </div>
         </div>
@@ -140,7 +192,9 @@
             less. Developers, data scientists, creative thinkers, problem
             solvers, travel junkies — you’ll fit right in.
           </p>
-          <a href="./careerList.html" class="sectioniv-link">See current openings at Hopper</a>
+          <a href="./careerList.html" class="sectioniv-link"
+            >See current openings at Hopper</a
+          >
         </div>
       </div>
     </div>
@@ -155,26 +209,26 @@
       <div class="swiper-container">
         <div class="swiper-wrapper laptop">
           <div class="swiper-slide paris">
-            <img src="./images/sectionv/1.png" alt="" />
+            <img src="https://res.cloudinary.com/dw4rdnuqh/image/upload/v1593029070/Team-Mars/1_ivpjtq.png" alt="" />
             <p class="location-tag">Paris</p>
           </div>
           <div class="swiper-slide cario">
-            <img src="./images/sectionv/Rectangle 2.4.png" alt="" />
+            <img src="https://res.cloudinary.com/dw4rdnuqh/image/upload/v1593029059/Team-Mars/Rectangle_2.4_n9tn4h.png" alt="" />
             <p class="location-tag">Cario</p>
           </div>
           <div class="swiper-slide agege">
-            <img src="./images/sectionv/hide.png" alt="" />
+            <img src="https://res.cloudinary.com/dw4rdnuqh/image/upload/v1593029059/Team-Mars/hide_vpadqd.png" alt="" />
           </div>
           <div class="swiper-slide new-york">
-            <img src="./images/sectionv/Rectangle 2.png" alt="" />
+            <img src="https://res.cloudinary.com/dw4rdnuqh/image/upload/v1593029064/Team-Mars/Rectangle_2_pevdvp.png" alt="" />
             <p class="location-tag">New York</p>
           </div>
           <div class="swiper-slide cancun">
-            <img src="./images/sectionv/Rectangle 2.5.png" alt="" />
+            <img src="https://res.cloudinary.com/dw4rdnuqh/image/upload/v1593029062/Team-Mars/Rectangle_2.5_jgw3r2.png" alt="" />
             <p class="location-tag">Cancun</p>
           </div>
           <div class="swiper-slide hong-kong">
-            <img src="./images/sectionv/Rectangle 2.6.png" alt="" />
+            <img src="https://res.cloudinary.com/dw4rdnuqh/image/upload/v1593029066/Team-Mars/Rectangle_2.6_ei3rca.png" alt="" />
             <p class="location-tag">Hong Kong</p>
           </div>
         </div>
@@ -182,7 +236,9 @@
         <div class="swiper-pagination"></div>
       </div>
 
-      <a href="#" class="sectionv-download-btn">Send app to your phone</a>
+      <a href="./cta-modal.html" class="sectionv-download-btn"
+        >Send app to your phone</a
+      >
       <p class="sectionv-download-info">
         Download the Hopper App to find the best prices
       </p>
@@ -208,7 +264,7 @@
                 <a href="#">Feature</a>
                 <a href="#">Deals</a>
                 <a href="#">Privacy policy</a>
-                <a href="#">Terms of service</a>
+                <a href="./termsofservice.html">Terms of service</a>
               </div>
             </div>
             <div class="option-container">
@@ -267,7 +323,7 @@
                 <p class="options plus-btn">+</p>
               </div>
               <div class="hide">
-                <a href="#">Home</a>
+                <a href="./index.html">Home</a>
                 <a href="#">Press kit</a>
                 <a href="#">Research</a>
                 <a href="#">Contact</a>
@@ -304,14 +360,14 @@
               <img src="./icons/Vector1.svg" alt="" />
             </div>
             <div class="option-title right">
-              <div class="option"><h4 class="selected">Hooper</h4></div>
-              <div class="option"><h4>Company</h4></div>
-              <div class="option"><h4>People</h4></div>
+              <div class="option"><a href="./index.html">Hooper</a></div>
+              <div class="option"><a href="./company.html">Company</a></div>
+              <div class="option"><a href="./people.html">People</a></div>
               <div class="option">
-                <h4>Support <img src="./icons/Vector.svg" alt="" /></h4>
+                <a href="">Support <img src="./icons/Vector.svg" alt="" /></a>
               </div>
               <div class="option">
-                <h4>Media <img src="./icons/Vector.svg" alt="" /></h4>
+                <a href="">Media <img src="./icons/Vector.svg" alt="" /></a>
               </div>
             </div>
             <div class="footer-large-second">
@@ -328,7 +384,7 @@
                   <a href="#">Feature</a>
                   <a href="#">Deals</a>
                   <a href="#">Privacy policy</a>
-                  <a href="#">Terms of service</a>
+                  <a href="./termsofservice.html">Terms of service</a>
                 </div>
                 <div class="company">
                   <a href="#">About</a>
@@ -381,8 +437,33 @@
         </div>
       </div>
     </div>
+    <section id="modal">
+      <div class="wrapper">
+        <div class="help">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 448c-110.532 0-200-89.431-200-200 0-110.495 89.472-200 200-200 110.491 0 200 89.471 200 200 0 110.53-89.431 200-200 200zm107.244-255.2c0 67.052-72.421 68.084-72.421 92.863V300c0 6.627-5.373 12-12 12h-45.647c-6.627 0-12-5.373-12-12v-8.659c0-35.745 27.1-50.034 47.579-61.516 17.561-9.845 28.324-16.541 28.324-29.579 0-17.246-21.999-28.693-39.784-28.693-23.189 0-33.894 10.977-48.942 29.969-4.057 5.12-11.46 6.071-16.666 2.124l-27.824-21.098c-5.107-3.872-6.251-11.066-2.644-16.363C184.846 131.491 214.94 112 261.794 112c49.071 0 101.45 38.304 101.45 88.8zM298 368c0 23.159-18.841 42-42 42s-42-18.841-42-42 18.841-42 42-42 42 18.841 42 42z"/></svg>
+        </div>
+        <div class="close">
+          <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="cross" class="svg-inline--fa fa-cross fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><path d="M1016.88 824.878c-.004-.004-.008-.008-.012-.01l-310.643-310.65 310.644-310.65.012-.01a31.763 31.763 0 0 0 7.312-11.416c4.246-11.376 1.824-24.682-7.324-33.83L870.122 11.566C860.974 2.42 847.672 0 836.294 4.246a31.826 31.826 0 0 0-11.418 7.31c0 .004-.004.006-.008.01L514.22 322.218 203.572 11.568l-.01-.01a31.794 31.794 0 0 0-11.414-7.31c-11.38-4.248-24.682-1.826-33.83 7.32L11.57 158.316c-9.148 9.148-11.568 22.452-7.322 33.828a31.816 31.816 0 0 0 7.312 11.416c.004.002.006.006.01.01l310.65 310.648L11.57 824.87l-.008.01a31.859 31.859 0 0 0-7.314 11.414C0 847.67 2.422 860.976 11.57 870.124l146.748 146.746c9.15 9.148 22.452 11.568 33.83 7.322a31.834 31.834 0 0 0 11.416-7.312c.002-.004.006-.006.01-.01l310.648-310.65 310.648 310.65.012.008a31.822 31.822 0 0 0 11.414 7.314c11.378 4.246 24.684 1.826 33.828-7.322l146.746-146.748c9.148-9.148 11.57-22.454 7.324-33.83a31.805 31.805 0 0 0-7.314-11.414z"></path>
+  </svg>
+        </div>
+        <div class="logo">
+          <a href="./index.html"><img src="./images/logo.png" alt=""></a>
+        </div>
+        <nav class="modal-nav">
+          <ul class="flex">
+            <li><a href="#">Company</a></li>
+            <li><a href="./people.html">People</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="./cta-modal.html">Download</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="./js/sectionv/preloader.js"></script>
+    <script src="./js/sectionv/nav.js"></script>
     <script src="./js/sectionv/swiper.js"></script>
     <script src="./js/sectionv/footer.js"></script>
+    <script src="./js/hamburger.js"></script>
   </body>
 </html>
